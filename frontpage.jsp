@@ -15,6 +15,12 @@
 			color: white;
 			margin: 0px 0 70px 0;
 		}
+		h3 {
+			position: relative;
+			text-align: center;
+			color: white;
+			font-size: 60px;
+		}
 		h4 {
 			font-family: 'Poppins', sans-serif;
 			text-align: center;
@@ -26,7 +32,6 @@
 			text-align: right;
   		}
 		nav {
-			position: sticky;
 			top: 0;
 			left: 0;
 			z-index: 1;
@@ -35,7 +40,6 @@
 			justify-content: space-between;
 			padding: 1.5rem 3.5rem;
 			color: white;
-			box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 		}
 		nav ul {
 			display: flex;
@@ -67,7 +71,7 @@
 			height: 200px;
 			background-size: cover;
 			position: relative;
-			margin: 40px 0 0 0;
+			margin: 0 0 0 0;
 			border-radius: 12px;
 		}
 		p {
@@ -93,7 +97,16 @@
 			justify-content: center;
 			height: 800px;
 			
-		}</style>
+		}
+		.omeletteImageContainer{
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			height: 800px;
+			
+		}
+		
+		</style>
 	</head>
 	<body>
 		<h1>the breakfast kitchen</h1>
@@ -107,12 +120,15 @@
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
 		
-		
+		<!--.menu {
+			background-size: cover;
+			height: 100vh;
+			width: 100vw;
+			background: gray;
+			border-radius: 0;
+			
+		}-->
 		</nav>
-		
-		
-		
-		
 		
 	<div class="pancakeImageContainer">
 	<img 
@@ -123,12 +139,24 @@
 	</div>
 	<div >
 	<h4>experience breakfast like never before</h4>
-  <p>
-  <!--<small>Silver dollar pancakes topped with bananas and powdered sugar</small></p>
-</div>
-	<div class="first">
-  <p>banana pancakes <span class="price">$12</span><br />
-  <small>Silver dollar pancakes topped with bananas and powdered sugar</small></p>
-</div>-->
+	</div>
+	<div class="omeletteImageContainer">
+		<img 
+				src="omelette.jpg"
+				alt="Image of breakfast items"
+				class="profileImage"
+			/>
+	</div>
+	
+	<div class="menu">
+		<p>Menu</p>
+		<p>banana pancakes <span class="price">$12</span><br />
+		<small>Silver dollar pancakes topped with bananas and powdered sugar</small></p>
+		<p>veggie omelette <span class="price">$14</span><br />
+		<small>Served with spinach, tomato, and mushroom</small></p>
+		<p>chicken and waffles <span class="price">$11</span><br />
+		<small>Served with your choice of sauce</small></p><br />
+	</div>
+	
 	</body>
 </html>
